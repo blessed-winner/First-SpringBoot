@@ -1,13 +1,13 @@
-package com.xenon.student_manager;
+package com.xenon.store;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StudentManagerApplication {
+public class StoreApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StudentManagerApplication.class, args);
+		SpringApplication.run(StoreApplication.class, args);
 	}
 
 }

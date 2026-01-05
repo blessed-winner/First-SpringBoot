@@ -1,4 +1,4 @@
-package com.xenon.student_manager;
+package com.xenon.store;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
