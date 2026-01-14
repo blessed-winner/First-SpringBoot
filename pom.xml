@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.xenon</groupId>
-	<artifactId>student-manager</artifactId>
+	<artifactId>store-application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>student-manager</name>
+	<name>store-application</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -60,6 +60,12 @@
            <groupId>org.flywaydb</groupId>
            <artifactId>flyway-mysql</artifactId>
         </dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>annotationProcessor</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -79,6 +85,21 @@
 					 <password>HomesweetHome</password>
 			   </configuration>
                </plugin>
+			   <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.13.0</version> <!-- or newer -->
+            <configuration>
+                <source>17</source> <!-- or 21, 23 etc. -->
+                <target>17</target>
+                <annotationProcessorPaths>
+                    <path>
+                        <groupId>org.projectlombok</groupId>
+                        <artifactId>lombok</artifactId>
+                    </path>
+                </annotationProcessorPaths>
+            </configuration>
+        </plugin>
 		</plugins>
 	</build>
 

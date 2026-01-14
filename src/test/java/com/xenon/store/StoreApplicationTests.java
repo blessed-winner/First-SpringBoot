@@ -1,10 +1,10 @@
-package com.xenon.student_manager;
+package com.xenon.store;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StudentManagerApplicationTests {
+class StoreApplicationTests {
 
 	@Test
 	void contextLoads() {
